@@ -1,6 +1,5 @@
 # Academic Pages
 **Academic Pages is a Github Pages template for academic websites.**
-
 **learn from 知乎https://zhuanlan.zhihu.com/p/711554540?utm_psn=1835799784717438976**
 ![Academic Pages template example](images/homepage.png "Academic Pages template example")
 
