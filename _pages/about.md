@@ -7,16 +7,9 @@ redirect_from:
   - /about.html
 ---
 
+A  personal website
 ======
-
-
-======
-
-
-
-A data-driven personal website
-======
-
+具体内容见Blog Posts部分
 
 Getting started
 ======
