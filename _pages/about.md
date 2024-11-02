@@ -7,6 +7,7 @@ redirect_from:
   - /about.html
 ---
 
+
 A  personal website
 ======
 具体内容见Blog Posts部分
