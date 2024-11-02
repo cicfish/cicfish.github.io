@@ -12,5 +12,4 @@ tags:
 
 如果有需要上传的内容可以发给我，再传到网站上
 
-{% pdf /pdf-files/一个没写论文标题的O奖论文手的自白.pdf %} 
 [一个没写论文标题的O奖论文手的自白.pdf](https://cicfish.github.io/pdf-files/一个没写论文标题的O奖论文手的自白.pdf)
