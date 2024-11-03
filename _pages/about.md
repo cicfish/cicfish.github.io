@@ -12,5 +12,5 @@ A  personal website
 ======
 具体内容见Blog Posts部分
 
-Getting started
+会有人打卡的 "对吗.jpg"
 ======
