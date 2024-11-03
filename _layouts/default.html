@@ -35,6 +35,27 @@ layout: compress
   <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
   <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
+<!-- Gitalk 评论 start  -->
+
+<!-- Link Gitalk 的支持文件  -->
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script> 
+<div id="gitalk-container"></div>     <script type="text/javascript">
+    var gitalk = new Gitalk({
+
+    // gitalk的主要参数
+		clientID: `Ov23li3LMQ1f2TeOsSvp`,
+		clientSecret: `8fc51603624c27188d6f462b62143ee2fbb35be4`,
+		repo: `blog-comments`, 
+		owner: 'cicfish', 
+		admin: ['cicfish']
+		id: ' cicfish.github,io'
+    	distractionFreeMode: false  // 类似Facebook评论框的全屏遮罩效果
+    });
+    gitalk.render('gitalk-container');
+</script> 
+<!-- Gitalk end -->
+
     
   </body>
 </html>
