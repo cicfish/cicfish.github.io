@@ -12,5 +12,5 @@ A  personal website
 ======
 具体内容见Blog Posts部分
 
-会有人打卡的 ![对吗](images/对吗.jpg)
+会有人打卡的 ![对吗](/images/对吗.jpg)
 ======
