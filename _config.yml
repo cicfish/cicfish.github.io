@@ -348,9 +348,3 @@ compress_html:
   clippings: all
   ignore:
     envs: development
-# https://github.com/settings/applications/2763248
-gitalk:
-  owner:cicfish
-  repo: blog-comments
-  clientID: Ov23li3LMQ1f2TeOsSvp
-  clientSecret: 1be2e13d8de823bece78acc7d77cd847365aac15
