@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Welcome to Fish's GitHub Pages for academic personal websites :)"
+title: " This is Fish :)"
 author_profile: true
 redirect_from: 
   - /about/
