@@ -15,8 +15,8 @@ redirect_from:
     </p>
     <!-- 按钮容器，使用 Flexbox 排列按钮 -->
     <div id="button-container">
-      <button onclick="closePopup()">关闭</button>
-      <button onclick="redirectToUrl()">跳转</button>
+      <button class="popup-button" onclick="closePopup()">关闭</button>
+      <button class="popup-button" onclick="redirectToUrl()">跳转</button>
     </div>
   </div>
 </div>
@@ -34,7 +34,7 @@ function closePopup() {
 
 // 跳转到指定网址的函数
 function redirectToUrl() {
-  window.location.href = "https://example.com";  // 将此处的 URL 替换为需要跳转的地址
+  window.location.href = "https://cicfish.github.io//posts/2024/announcements/week/";  // 将此处的 URL 替换为需要跳转的地址
 }
 
 // 页面加载时显示弹窗
@@ -86,8 +86,8 @@ window.onload = function() {
   margin-top: 20px;  /* 增加按钮和文字之间的间距 */
 }
 
-/* 按钮样式 */
-button {
+/* 弹窗按钮样式，使用 .popup-button 进行限定 */
+.popup-button {
   padding: 10px 20px;
   background-color: #007BFF;
   color: white;
@@ -99,7 +99,7 @@ button {
 }
 
 /* 鼠标悬停时按钮样式 */
-button:hover {
+.popup-button:hover {
   background-color: #0056b3;
 }
 </style>
