@@ -54,33 +54,31 @@ window.onload = function() {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* 半透明灰色背景 */
-  display: none;
-  z-index: 9998; /* 确保蒙版位于弹窗下方，优先级仅次于弹窗 */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7); /* 半透明背景 */
+  z-index: 1001; /* 确保蒙版在最上层 */
+  display: none; /* 初始不显示 */
 }
 
 /* 弹窗样式 */
 #popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 居中 */
+  width: 300px;
+  height: 200px;
   background-color: white;
-  width: 300px; /* 设置宽度为手掌大小 */
-  height: 400px; /* 设置高度为手掌大小 */
   padding: 20px;
   border-radius: 10px;
-  z-index: 9999; /* 确保弹窗位于最上层 */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   text-align: center;
+  z-index: 1002; /* 确保弹窗在蒙版之上 */
 }
 
+/* 文字样式 */
 #popup-text {
-  font-size: 20px; /* 默认字体大小 */
-  font-family: Arial, sans-serif; /* 默认字体 */
-  color: #333; /* 默认字体颜色 */
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  color: #333;
   line-height: 1.5;
 }
 
@@ -97,5 +95,10 @@ button {
 
 button:hover {
   background-color: #0056b3;
+}
+
+/* 使 Gitalk 评论区的 z-index 更低，确保蒙版遮住它 */
+#gitalk-container {
+  z-index: 999; /* 比蒙版低，确保被蒙版遮挡 */
 }
 </style>
