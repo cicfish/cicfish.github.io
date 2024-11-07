@@ -20,7 +20,7 @@ layout: default
 ---
 
 <!-- 弹窗 HTML 结构 -->
-<div id="popup" style="display: none;">
+<div id="popup-overlay" style="display: none;">
   <div id="popup-content">
     <p id="popup-text">第二周“苦学”作业DDL：2024.11.10</p>
     <button onclick="closePopup()">关闭</button>
@@ -30,12 +30,12 @@ layout: default
 <script>
 // 弹窗显示函数
 function openPopup() {
-  document.getElementById('popup').style.display = 'block';
+  document.getElementById('popup-overlay').style.display = 'block';
 }
 
 // 弹窗关闭函数
 function closePopup() {
-  document.getElementById('popup').style.display = 'none';
+  document.getElementById('popup-overlay').style.display = 'none';
 }
 
 // 页面加载时显示弹窗
@@ -45,25 +45,29 @@ window.onload = function() {
 </script>
 
 <style>
-/* 弹窗样式 */
-#popup {
+/* 蒙版样式 */
+#popup-overlay {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* 使弹窗居中 */
-  width: 300px; /* 设置宽度为手掌大小 */
-  height: 400px; /* 设置高度为手掌大小 */
-  background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
-  display: none;
-  z-index: 9999; /* 确保弹窗显示在最上层 */
-}
-
-#popup-content {
-  background-color: white;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 半透明灰色背景 */
+  display: none;
+  z-index: 9998; /* 确保蒙版位于弹窗下方，优先级仅次于弹窗 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 弹窗样式 */
+#popup-content {
+  background-color: white;
+  width: 300px; /* 设置宽度为手掌大小 */
+  height: 400px; /* 设置高度为手掌大小 */
   padding: 20px;
   border-radius: 10px;
+  z-index: 9999; /* 确保弹窗位于最上层 */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -72,7 +76,7 @@ window.onload = function() {
 }
 
 #popup-text {
-  font-size: 18px; /* 默认字体大小 */
+  font-size: 20px; /* 默认字体大小 */
   font-family: Arial, sans-serif; /* 默认字体 */
   color: #333; /* 默认字体颜色 */
   line-height: 1.5;
