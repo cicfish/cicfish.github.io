@@ -22,7 +22,9 @@ layout: default
 <!-- 弹窗 HTML 结构 -->
 <div id="popup-overlay" style="display: none;">
   <div id="popup-content">
-    <p id="popup-text">第二周“苦学”作业DDL：2024.11.10</p>
+    <p id="popup-text">
+      <strong>第二周“苦学”作业DDL：</strong>2024.11.10
+    </p>
     <button onclick="closePopup()">关闭</button>
   </div>
 </div>
