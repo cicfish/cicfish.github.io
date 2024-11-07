@@ -15,9 +15,6 @@ A  personal website
 会有人打卡的， <img src="/images/对吗.jpg" alt="对吗" width="200"/>
 ======
 
----
-layout: default
----
 
 <!-- 弹窗 HTML 结构 -->
 <div id="popup-overlay" style="display: none;">
@@ -25,7 +22,11 @@ layout: default
     <p id="popup-text">
       <strong>第二周“苦学”作业DDL：</strong>2024.11.10
     </p>
-    <button onclick="closePopup()">关闭</button>
+    <!-- 按钮容器，使用 Flexbox 排列按钮 -->
+    <div id="button-container">
+      <button onclick="closePopup()">关闭</button>
+      <button onclick="redirectToUrl()">跳转</button>
+    </div>
   </div>
 </div>
 
@@ -38,6 +39,11 @@ function openPopup() {
 // 弹窗关闭函数
 function closePopup() {
   document.getElementById('popup-overlay').style.display = 'none';
+}
+
+// 跳转到指定网址的函数
+function redirectToUrl() {
+  window.location.href = "https://example.com";  // 将此处的 URL 替换为需要跳转的地址
 }
 
 // 页面加载时显示弹窗
@@ -66,7 +72,7 @@ window.onload = function() {
   left: 50%;
   transform: translate(-50%, -50%); /* 居中 */
   width: 300px;
-  height: 200px;
+  height: 220px; /* 增加高度以适应两个按钮 */
   background-color: white;
   padding: 20px;
   border-radius: 10px;
@@ -82,6 +88,13 @@ window.onload = function() {
   line-height: 1.5;
 }
 
+/* 按钮容器样式，使用 Flexbox 布局 */
+#button-container {
+  display: flex;
+  justify-content: space-between;  /* 按钮之间留出空间 */
+  margin-top: 20px;  /* 增加按钮和文字之间的间距 */
+}
+
 /* 按钮样式 */
 button {
   padding: 10px 20px;
@@ -91,14 +104,11 @@ button {
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
+  width: 45%; /* 确保按钮宽度一致 */
 }
 
+/* 鼠标悬停时按钮样式 */
 button:hover {
   background-color: #0056b3;
-}
-
-/* 使 Gitalk 评论区的 z-index 更低，确保蒙版遮住它 */
-#gitalk-container {
-  z-index: 999; /* 比蒙版低，确保被蒙版遮挡 */
 }
 </style>
