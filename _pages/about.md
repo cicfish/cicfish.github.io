@@ -41,11 +41,16 @@ function redirectToUrl() {
 
 // 页面加载时显示弹窗
 window.onload = function() {
-  setTimeout(openPopup, 300); // 1秒后显示弹窗
+  setTimeout(openPopup, 100); // 0.1秒后显示弹窗
 };
 </script>
 
 <style>
+
+ .no-scroll {
+  overflow: hidden;
+}
+  
 /* 蒙版样式 */
 #popup-overlay {
   position: fixed;
