@@ -25,11 +25,13 @@ redirect_from:
 // 弹窗显示函数
 function openPopup() {
   document.getElementById('popup-overlay').style.display = 'block';
+  document.body.classList.add('no-scroll');  // 禁用滚动
 }
 
 // 弹窗关闭函数
 function closePopup() {
   document.getElementById('popup-overlay').style.display = 'none';
+  document.body.classList.remove('no-scroll');  // 启用滚动
 }
 
 // 跳转到指定网址的函数
@@ -39,7 +41,7 @@ function redirectToUrl() {
 
 // 页面加载时显示弹窗
 window.onload = function() {
-  setTimeout(openPopup, 1000); // 1秒后显示弹窗
+  setTimeout(openPopup, 300); // 1秒后显示弹窗
 };
 </script>
 
