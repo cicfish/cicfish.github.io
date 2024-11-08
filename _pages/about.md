@@ -41,7 +41,7 @@ function redirectToUrl() {
 
 // 页面加载时显示弹窗
 window.onload = function() {
-  setTimeout(openPopup, 100); // 0.1秒后显示弹窗
+  setTimeout(openPopup,0000); // 0.1秒后显示弹窗
 };
 </script>
 
