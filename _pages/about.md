@@ -12,11 +12,11 @@ redirect_from:
   <div id="popup-content">
     <p id="popup-text">
       <strong>通知</strong>
-      
+      <br>
       We understand the conflict between extracurricular learning and daily academic responsibilities. Therefore, we have canceled the fixed weekly schedule, allowing everyone to allocate their time freely.
-
+      <br>
       Wishing you all the best in your daily life!
-
+      <br>
       Deadline: 2025.1.5
     </p>
     <!-- 按钮容器，使用 Flexbox 排列按钮 -->
