@@ -16,6 +16,7 @@ redirect_from:
       We understand the conflict between extracurricular learning and daily academic responsibilities. Therefore, we have canceled the fixed weekly schedule, allowing everyone to allocate their time freely.
 
 Wishing you all the best in your daily life!
+
 Deadline: 2025.1.5
     </p>
     <!-- 按钮容器，使用 Flexbox 排列按钮 -->
