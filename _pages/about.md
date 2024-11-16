@@ -72,8 +72,8 @@ window.onload = function() {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); /* 居中 */
-  width: 300px;
-  height: 220px; /* 增加高度以适应两个按钮 */
+  width: 500px;
+  height: 300px; /* 增加高度以适应两个按钮 */
   background-color: white;
   padding: 20px;
   border-radius: 10px;
