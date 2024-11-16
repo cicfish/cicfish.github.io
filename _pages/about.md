@@ -11,7 +11,10 @@ redirect_from:
 <div id="popup-overlay" style="display: none;">
   <div id="popup-content">
     <p id="popup-text">
-      <strong>第二周“苦学”作业DDL：</strong>2024.11.10
+      <strong>通知</strong>We understand the conflict between extracurricular learning and daily academic responsibilities. Therefore, we have canceled the fixed weekly schedule, allowing everyone to allocate their time freely.
+
+Wishing you all the best in your daily life!
+Deadline: 2025.1.5
     </p>
     <!-- 按钮容器，使用 Flexbox 排列按钮 -->
     <div id="button-container">
