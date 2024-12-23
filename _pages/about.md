@@ -21,6 +21,12 @@ redirect_from:
 }
 
 /* 自定义目录链接样式 */
+.toc {
+  margin-top: 0; /* 根据需要调整这个值 */
+  padding-top: 0; /* 根据需要调整这个值 */
+}
+
+/* 自定义目录链接样式 */
 .toc a {
   color: black; /* 更改为黑色 */
   font-weight: bold; /* 设置为粗体 */
