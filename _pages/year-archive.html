@@ -107,19 +107,25 @@ document.addEventListener('DOMContentLoaded', function() {
 /* 输入框和按钮样式 */
 #password-input {
   width: 80%;
-  padding: 10px;
+  height: 40px;  /* 设置高度 */
+  padding: 0 10px;  /* 让输入框内的文字有适当间距 */
   margin: 10px 0;
   border: 1px solid #ccc;
   border-radius: 5px;
+  box-sizing: border-box; /* 保证内外边距不会影响宽度 */
+  font-size: 16px; /* 设置字体大小 */
 }
 
 button {
-  padding: 10px 20px;
+  width: 80%;  /* 使按钮宽度与输入框一致 */
+  height: 40px;  /* 设置按钮高度与输入框一致 */
+  padding: 0 20px; /* 让按钮的左右有间距 */
   border: none;
   background-color: #4CAF50;
   color: white;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 16px; /* 设置按钮字体大小 */
 }
 
 button:hover {
