@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "This is Fish :)"
+title: "This is CGQ :)"
 author_profile: true
 redirect_from: 
   - /about/
