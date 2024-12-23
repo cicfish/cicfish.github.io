@@ -7,6 +7,9 @@ redirect_from:
   - /about.html
 ---
 
+<div style="width: 80%; max-width: 600px;">
+  <img src="/images/冰红茶.jpg" alt="破防" style="width: 100%; height: auto;">
+</div>
 <style>
 /* 添加偏移量以确保跳转后标题不会被遮挡 */
 :target::before {
