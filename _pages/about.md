@@ -42,6 +42,11 @@ h2, h3, h4 {
   padding-top: 70px; /* 确保标题不会被遮挡，与你的 :target::before 高度相同 */
 }
 
+/* 设置默认字体颜色为黑色 */
+body, h1, h2, h3, h4, h5, h6, p, a, span, div {
+  color: black !important;
+}
+
 /* 覆盖全局样式，调整标题的上边距 */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0.5em !important;
