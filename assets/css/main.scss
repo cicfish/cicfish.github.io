@@ -10,6 +10,19 @@
  *
 */
 
+/* 引入自定义字体 */
+@font-face {
+    font-family: 'LXGWWENKAI';
+    src: url('/assets/webfonts/LXGWWENKAI-REGULAR.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 应用自定义字体到网页的主体 */
+body {
+    font-family: 'LXGWWENKAI', sans-serif;
+}
+
 @import "vendor/breakpoint/breakpoint"; // media query mixins
 @import "variables";
 @import "mixins";
