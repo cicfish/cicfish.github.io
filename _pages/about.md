@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
-A personal website
+味精通关指南
 ======
 
 <div class="toc">
