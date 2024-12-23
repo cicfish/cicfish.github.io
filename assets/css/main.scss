@@ -18,8 +18,8 @@
     font-style: normal;
 }
 
-/* 应用自定义字体到网页的主体 */
-body {
+/* 应用自定义字体到非英文文本 */
+:lang(zh), :lang(ja), :lang(ko) {
     font-family: 'LXGWWENKAI', sans-serif;
 }
 
