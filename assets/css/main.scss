@@ -21,11 +21,11 @@
 
 /* 应用自定义字体到非英文文本 */
 body {
-    font-family: sans-serif;
+    font-family: sans-serif !important;
 }
 
 :lang(zh), :lang(ja), :lang(ko) {
-    font-family: 'LXGWWENKAI', sans-serif;
+    font-family: 'LXGWWENKAI', sans-serif !important;
 }
 
 @import "vendor/breakpoint/breakpoint"; // media query mixins
