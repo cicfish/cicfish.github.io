@@ -30,13 +30,11 @@ redirect_from:
 .toc a:hover {
   text-decoration: underline; /* 悬停时显示下划线 */
 }
-
 /* 为各个标题添加适当的 padding-top 防止遮挡 */
 h2, h3, h4 {
   padding-top: 70px; /* 确保标题不会被遮挡，与你的 :target::before 高度相同 */
 }
 </style>
-
 <script>
 // 实现平滑滚动
 document.addEventListener('DOMContentLoaded', function() {
@@ -57,7 +55,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 味精通关指南
 ======
-
 <div class="toc">
   <h2>目录</h2>
   <ul>
