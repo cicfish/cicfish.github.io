@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-<div style="width: 80%; max-width: 600px;">
+<div style="width: 80%; max-width: 1000px;">
   <img src="/images/冰红茶.jpg" alt="破防" style="width: 100%; height: auto;">
 </div>
 <style>
