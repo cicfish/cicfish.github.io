@@ -7,32 +7,27 @@ html {
   min-height: 100%;
 }
 
-body {
-  margin: 0;
-  padding: $masthead-height 0 0;
-  padding-bottom: 9em;
-  color: $text-color;
-  font-family: $global-font-family;
-  line-height: 1.5;
-
-  &.overflow--hidden {
-    /* when primary navigation is visible, the content in the background won't scroll */
-    overflow: hidden;
-  }
-}
-
 /* 引入自定义字体 */
 @font-face {
     font-family: 'LXGWWENKAI';
     src: url('/assets/webfonts/LXGWWENKAI-REGULAR.TTF') format('truetype');
     font-weight: normal;
     font-style: normal;
-    unicode-range: U+4E00-9FFF; /* 仅应用于CJK统一表意文字 */
 }
 
-/* 应用自定义字体到非英文文本 */
-:lang(zh), :lang(ja), :lang(ko) {
+/* 设置默认字体为 LXGWWENKAI */
+body {
+    margin: 0;
+    padding: $masthead-height 0 0;
+    padding-bottom: 9em;
+    color: $text-color;
     font-family: 'LXGWWENKAI', sans-serif !important;
+    line-height: 1.5;
+
+    &.overflow--hidden {
+        /* when primary navigation is visible, the content in the background won't scroll */
+        overflow: hidden;
+    }
 }
 
 h1, h2, h3, h4, h5, h6 {
