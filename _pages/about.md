@@ -25,6 +25,7 @@ redirect_from:
   color: black; /* 更改为黑色 */
   font-weight: bold; /* 设置为粗体 */
   text-decoration: none; /* 移除下划线 */
+  font-family: 'LXGWWENKAI', sans-serif; /* 设置字体为 LXGWWENKAI */
 }
 
 .toc a:hover {
@@ -35,6 +36,7 @@ h2, h3, h4 {
   padding-top: 70px; /* 确保标题不会被遮挡，与你的 :target::before 高度相同 */
 }
 </style>
+
 <script>
 // 实现平滑滚动
 document.addEventListener('DOMContentLoaded', function() {
