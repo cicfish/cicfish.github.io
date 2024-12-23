@@ -12,14 +12,10 @@ redirect_from:
 :target::before {
   content: "";
   display: block;
-  height: 100px; /* 根据需要调整偏移量 */
-  margin-top: -100px; /* 与height值相同 */
+  height: 60px; /* 根据需要调整偏移量 */
+  margin-top: -60px; /* 与height值相同 */
   visibility: hidden;
 }
-</style>
-
-A  personal website
-======
 
 /* 自定义目录链接样式 */
 .toc a {
@@ -31,6 +27,20 @@ A  personal website
   text-decoration: underline; /* 悬停时显示下划线 */
 }
 </style>
+
+<script>
+// 实现平滑滚动
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+});
+</script>
 
 A personal website
 ======
@@ -58,6 +68,10 @@ A personal website
 会有人看的， <img src="/images/对吗.jpg" alt="对吗" width="200"/>
 ======
 
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 <br>
