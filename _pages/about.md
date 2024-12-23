@@ -22,8 +22,8 @@ redirect_from:
 
 /* 自定义目录链接样式 */
 .toc {
-  margin-top: 50px; /* 根据需要调整这个值 */
-  padding-top: 50px; /* 根据需要调整这个值 */
+  margin-top: 20px; /* 根据需要调整这个值 */
+  padding-top: 0px; /* 根据需要调整这个值 */
 }
 
 /* 自定义目录链接样式 */
