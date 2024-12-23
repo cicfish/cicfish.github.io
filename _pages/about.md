@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
 ## 大一
 这是大一部分。
 
-## 教育
+## 大二
 这是教育部分。
 
 ## 工作经历
