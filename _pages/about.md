@@ -12,8 +12,8 @@ redirect_from:
 :target::before {
   content: "";
   display: block;
-  height: 60px; /* 根据需要调整偏移量 */
-  margin-top: -60px; /* 与height值相同 */
+  height: 100px; /* 根据需要调整偏移量 */
+  margin-top: -100px; /* 与height值相同 */
   visibility: hidden;
 }
 
