@@ -44,7 +44,8 @@ function checkPassword() {
 
     // 恢复页面的交互
     document.body.style.overflow = 'auto';  // 恢复滚动
-    document.body.style.pointerEvents = 'auto';  // 恢复点击事件
+    document.getElementById('password-overlay').style.pointerEvents = 'none';  // 关闭弹窗的点击事件
+    document.getElementById('main-content').style.pointerEvents = 'auto';  // 允许访问页面内容
   } else {
     // 显示错误信息
     document.getElementById('error-message').style.display = 'block';
@@ -60,12 +61,9 @@ document.addEventListener('DOMContentLoaded', function() {
   // 禁用页面滚动
   document.body.style.overflow = 'hidden'; // 禁止滚动
 
-  // 禁用点击事件，保持弹窗可以点击
-  document.body.style.pointerEvents = 'none'; // 禁止所有页面点击
-
-  // 仅允许操作密码输入框和按钮
-  document.getElementById('password-input').disabled = false;
-  document.querySelector('button').disabled = false;
+  // 禁用点击事件，但不禁用弹窗
+  document.getElementById('password-overlay').style.pointerEvents = 'auto';  // 保持弹窗点击可操作
+  document.getElementById('main-content').style.pointerEvents = 'none'; // 禁止访问页面内容
 });
 </script>
 
