@@ -12,8 +12,8 @@ redirect_from:
 :target::before {
   content: "";
   display: block;
-  height: 100px; /* 根据需要调整偏移量 */
-  margin-top: -100px; /* 与height值相同 */
+  height: 70px; /* 调整这个值以适应你的页面布局，确保标题不会被遮挡 */
+  margin-top: -70px; /* 与height值相同 */
   visibility: hidden;
 }
 
@@ -27,6 +27,11 @@ redirect_from:
 .toc a:hover {
   text-decoration: underline; /* 悬停时显示下划线 */
 }
+
+/* 为各个标题添加适当的 padding-top 防止遮挡 */
+h2, h3, h4 {
+  padding-top: 70px; /* 确保标题不会被遮挡，与你的 :target::before 高度相同 */
+}
 </style>
 
 <script>
@@ -38,7 +43,8 @@ document.addEventListener('DOMContentLoaded', function() {
       const target = document.querySelector(this.getAttribute('href'));
       if (target) {
         target.scrollIntoView({
-          behavior: 'smooth'
+          behavior: 'smooth',
+          block: 'start' // 确保滚动的目标元素对齐页面顶部
         });
       }
     });
@@ -73,6 +79,7 @@ A personal website
 
 会有人看的， <img src="/images/对吗.jpg" alt="对吗" width="200"/>
 ======
+
 
 <br>
 <br>
