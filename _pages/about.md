@@ -7,6 +7,7 @@ redirect_from:
   - /about.html
 ---
 
+<!--
 <!-- 弹窗 HTML 结构 -->
 <div id="popup-overlay" style="display: none;">
   <div id="popup-content">
@@ -116,7 +117,7 @@ window.onload = function() {
   background-color: #0056b3;
 }
 </style>
-
+-->
 
 A  personal website
 ======
