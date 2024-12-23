@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: " This is Fish :)"
+title: "This is Fish :)"
 author_profile: true
 redirect_from: 
   - /about/
@@ -19,7 +19,8 @@ redirect_from:
 
 /* 自定义目录链接样式 */
 .toc a {
-  color: #3498db; /* 更改链接颜色 */
+  color: black; /* 更改为黑色 */
+  font-weight: bold; /* 设置为粗体 */
   text-decoration: none; /* 移除下划线 */
 }
 
@@ -34,9 +35,12 @@ document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
       e.preventDefault();
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth'
-      });
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
     });
   });
 });
