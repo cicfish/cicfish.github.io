@@ -7,6 +7,16 @@ redirect_from:
   - /about.html
 ---
 
+<style>
+/* 添加偏移量以确保跳转后标题不会被遮挡 */
+:target::before {
+  content: "";
+  display: block;
+  height: 60px; /* 根据需要调整偏移量 */
+  margin-top: -60px; /* 与height值相同 */
+  visibility: hidden;
+}
+</style>
 
 A  personal website
 ======
