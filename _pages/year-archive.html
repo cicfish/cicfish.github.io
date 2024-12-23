@@ -38,9 +38,11 @@ function checkPassword() {
   var correctPassword = 'mima'; // 设置正确的密码
 
   if (inputPassword === correctPassword) {
+    // 隐藏密码弹窗，显示主内容
     document.getElementById('password-overlay').style.display = 'none';
     document.getElementById('main-content').style.display = 'block';
   } else {
+    // 显示错误信息
     document.getElementById('error-message').style.display = 'block';
   }
 }
@@ -53,20 +55,27 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <style>
-/* 弹窗样式 */
+/* 弹窗蒙版样式 */
 #password-overlay {
-  position: absolute;
-  top: 0%;
-  left: 0%;
+  position: fixed;  /* 使用 fixed 使其固定在屏幕中 */
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.75); /* 进一步降低透明度 */
+  background-color: rgba(0, 0, 0, 0.2); /* 设置透明度为 20% */
   z-index: 1001; /* 确保蒙版在最上层 */
   display: flex;
   justify-content: center;
   align-items: center; /* 使内容居中 */
 }
 
+/* 页面内容被遮挡时的样式 */
+#main-content {
+  display: none; /* 默认隐藏 */
+  z-index: 1000; /* 页面内容的z-index低于蒙版 */
+}
+
+/* 弹窗内容样式 */
 #password-content {
   background-color: white;
   padding: 20px;
@@ -74,8 +83,37 @@ document.addEventListener('DOMContentLoaded', function() {
   text-align: center;
   width: 75%; /* 调整宽度为四分之三个屏幕 */
   max-width: 600px; /* 设置最大宽度 */
+  box-sizing: border-box; /* 确保宽度不被内边距影响 */
+}
+
+/* 输入框和按钮样式 */
+#password-input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#error-message {
+  margin-top: 10px;
 }
 </style>
+
+
 {% include base_path %}
 {% capture written_year %}'None'{% endcapture %}
 {% for post in site.posts %}
