@@ -42,14 +42,10 @@ h2, h3, h4 {
   padding-top: 70px; /* 确保标题不会被遮挡，与你的 :target::before 高度相同 */
 }
 
-/* 覆盖全局样式，调整标题的字体 */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'LXGWWENKAI', sans-serif !important;
-}
-
 /* 覆盖全局样式，调整标题的上边距 */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0.5em !important;
+  font-family: 'LXGWWENKAI', sans-serif !important;
 }
 </style>
 
