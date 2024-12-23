@@ -15,8 +15,8 @@ redirect_from:
 :target::before {
   content: "";
   display: block;
-  height: 70px; /* 调整这个值以适应你的页面布局，确保标题不会被遮挡 */
-  margin-top: -70px; /* 与height值相同 */
+  height: 80px; /* 调整这个值以适应你的页面布局，确保标题不会被遮挡 */
+  margin-top: -80px; /* 与height值相同 */
   visibility: hidden;
 }
 
