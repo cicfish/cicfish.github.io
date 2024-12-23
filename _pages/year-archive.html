@@ -43,7 +43,8 @@ function checkPassword() {
     document.getElementById('main-content').style.display = 'block';
 
     // 恢复页面的交互
-    document.body.classList.remove('no-interaction');  // 恢复滚动和点击
+    document.body.style.overflow = 'auto';  // 恢复滚动
+    document.body.style.pointerEvents = 'auto';  // 恢复点击事件
   } else {
     // 显示错误信息
     document.getElementById('error-message').style.display = 'block';
@@ -56,8 +57,15 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('password-overlay').style.display = 'block';
   document.getElementById('main-content').style.display = 'none';
 
-  // 禁用页面滚动和点击事件
-  document.body.classList.add('no-interaction');
+  // 禁用页面滚动
+  document.body.style.overflow = 'hidden'; // 禁止滚动
+
+  // 禁用点击事件，保持弹窗可以点击
+  document.body.style.pointerEvents = 'none'; // 禁止所有页面点击
+
+  // 仅允许操作密码输入框和按钮
+  document.getElementById('password-input').disabled = false;
+  document.querySelector('button').disabled = false;
 });
 </script>
 
@@ -123,15 +131,6 @@ button:hover {
 #error-message {
   margin-top: 10px;
 }
-
-/* 禁止滚动和点击页面内容，允许弹窗内容的交互 */
-body.no-interaction {
-  overflow: hidden; /* 禁止滚动 */
-}
-
-body.no-interaction *:not(#password-overlay) {
-  pointer-events: none; /* 禁止所有元素的点击事件，除了弹窗 */
-}
 </style>
 
 {% include base_path %}
@@ -144,4 +143,3 @@ body.no-interaction *:not(#password-overlay) {
   {% endif %}
   {% include archive-single.html %}
 {% endfor %}
-
