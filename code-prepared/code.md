@@ -65,8 +65,8 @@ window.onload = function() {
 /* 弹窗样式 */
 #popup-content {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  
+  
   transform: translate(-50%, -50%); /* 居中 */
   width: 500px;
   height: 350px; /* 增加高度以适应两个按钮 */
