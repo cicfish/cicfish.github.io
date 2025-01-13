@@ -84,15 +84,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 味精通关指南
 ======
-<div class="toc">
-  <h2>目录</h2>
-  <ul>
-    <li><a href="#大一">大一</a></li>
-    <li><a href="#大二">大二</a></li>
-    <li><a href="#工作经历">工作经历</a></li>
-    <li><a href="#项目">项目</a></li>
-  </ul>
-</div>
 
 ## 大一
 这是大一部分。
