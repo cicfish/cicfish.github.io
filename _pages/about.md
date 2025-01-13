@@ -15,9 +15,9 @@ redirect_from:
 
 <button id="toc-toggle" style="position: fixed; right: 20px; top: 20px; z-index: 9999; background-color: #4CAF50; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">目录</button>
 
-<div style="position: relative;">
-  <div id="toc-container" class="toc" style="position: fixed; right: 20px; top: 60px; width: 320px; max-height: 600px; overflow-y: auto; display: none; background: white; border: 1px solid rgba(128, 128, 128, 0.5); border-radius: 20px; z-index: 1000;">
-    <button id="toc-close" style="position: absolute; right: 10px; top: 10px; background-color: #f44336; color: white; border: none; padding: 5px; border-radius: 3px; cursor: pointer;">X</button>
+<div id="toc-modal" class="modal" style="display: none; position: fixed; z-index: 10000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.4);">
+  <div class="modal-content" style="background-color: white; margin: 15% auto; padding: 20px; border: 1px solid #888; width: 80%; max-width: 500px; border-radius: 20px;">
+    <span id="toc-close" style="color: #aaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer;">&times;</span>
     <h2>目录</h2>
     <ul>
       <li><a href="#导语">导语</a></li>
@@ -72,6 +72,17 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0.5em !important;
   font-family: 'LXGWWENKAI', sans-serif !important;
 }
+
+/* 模态框样式 */
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 20px;
+}
 </style>
 
 <script>
@@ -86,21 +97,34 @@ document.addEventListener('DOMContentLoaded', function() {
           behavior: 'smooth',
           block: 'start' // 确保滚动的目标元素对齐页面顶部
         });
+        
+        // 关闭模态框
+        document.getElementById('toc-modal').style.display = 'none';
+        document.getElementById('toc-toggle').style.display = 'block';
       }
     });
   });
 
   // 目录展开和收起功能
   const tocToggle = document.getElementById('toc-toggle');
-  const tocContainer = document.getElementById('toc-container');
+  const tocModal = document.getElementById('toc-modal');
   const tocClose = document.getElementById('toc-close');
 
   tocToggle.addEventListener('click', function() {
-    tocContainer.style.display = 'block';
+    tocModal.style.display = 'block';
+    tocToggle.style.display = 'none';
   });
 
   tocClose.addEventListener('click', function() {
-    tocContainer.style.display = 'none';
+    tocModal.style.display = 'none';
+    tocToggle.style.display = 'block';
+  });
+
+  window.addEventListener('click', function(event) {
+    if (event.target == tocModal) {
+      tocModal.style.display = 'none';
+      tocToggle.style.display = 'block';
+    }
   });
 });
 </script>
