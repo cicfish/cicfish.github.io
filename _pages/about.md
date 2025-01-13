@@ -23,18 +23,7 @@ redirect_from:
   </div>
   
   <div style="width: 80%; max-width: 1000px;">
-    ## 大一
-    这是大一部分。
-
-    ## 大二
-    这是教育部分。
-
-    ## 工作经历
-    这是工作经历部分。
-
-    ## 项目
-    这是项目部分。
-
+    
     会有人看的， <img src="/images/对吗.jpg" alt="对吗" width="200"/>
   </div>
 </div>
