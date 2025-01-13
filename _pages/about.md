@@ -76,7 +76,7 @@ body, h1, h2, h3, h4, h5, h6, p, a, span, div {
 /* 覆盖全局样式，调整标题的上边距 */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0.5em !important;
-  font-family: 'LXGWWENKAI', sans-serif !important;
+  font-family: 'LXGWWENKAI', sans-serif !重要;
 }
 </style>
 
