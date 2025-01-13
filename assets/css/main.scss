@@ -28,27 +28,6 @@ body {
     font-family: 'LXGWWENKAI', sans-serif !important;
 }
 
-/* 添加彩色底码 */
-body::before,
-body::after {
-  content: "";
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  background: linear-gradient(to right, rgba(135, 206, 250, 0.2), rgba(135, 206, 250, 0.2) calc(100% - 10px), rgba(255, 255, 255, 0.2)); /* 添加透明度的彩色渐变 */
-  z-index: -1; /* 确保背景在文字层的下方 */
-}
-
-body::before {
-  left: 0;
-  width: 635px; /* 左侧宽度 */
-}
-
-body::after {
-  right: 0;
-  width: 600px; /* 右侧宽度 */
-}
-
 @import "vendor/breakpoint/breakpoint"; // media query mixins
 @import "variables";
 @import "mixins";
