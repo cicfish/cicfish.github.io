@@ -36,7 +36,7 @@ body::after {
   top: 0;
   bottom: 0;
   width: 50px; /* 调整这个值以适应你的页面布局 */
-  background-color: #87CEFA; /* 你想要的彩色 */
+  background-color: rgba(135, 206, 250, 0.8); /* 添加透明度的彩色 */
   z-index: -1; /* 确保背景在文字层的下方 */
 }
 
