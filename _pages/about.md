@@ -21,11 +21,6 @@ redirect_from:
       <li><a href="#项目">项目</a></li>
     </ul>
   </div>
-  
-  <div style="width: 80%; max-width: 1000px;">
-
-    会有人看的， <img src="/images/对吗.jpg" alt="对吗" width="200"/>
-  </div>
 </div>
 
 <style>
