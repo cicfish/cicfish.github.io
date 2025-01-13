@@ -16,7 +16,7 @@ redirect_from:
 <button id="toc-toggle" style="position: fixed; right: 20px; top: 20px; z-index: 1000;">目录</button>
 
 <div style="position: relative;">
-  <div id="toc-container" class="toc" style="position: fixed; right: 20px; top: 60px; width: 320px; max-height: 600px; overflow-y: auto; display: none;">
+  <div id="toc-container" class="toc" style="position: fixed; right: 20px; top: 60px; width: 320px; max-height: 600px; overflow-y: auto; display: none; background: white; border: 1px solid rgba(128, 128, 128, 0.5); border-radius: 20px;">
     <button id="toc-close" style="position: absolute; right: 10px; top: 10px;">X</button>
     <h2>目录</h2>
     <ul>
@@ -46,12 +46,6 @@ redirect_from:
 }
 
 /* 自定义目录链接样式 */
-.toc {
-  border-radius: 20px; /* 圆角边框 */
-  border: 1px solid rgba(128, 128, 128, 0.5); /* 半透明灰色边框 */
-}
-
-/* 自定义目录链接样式 */
 .toc a {
   color: black; /* 更改为黑色 */
   font-weight: bold; /* 设置为粗体 */
@@ -76,13 +70,13 @@ body, h1, h2, h3, h4, h5, h6, p, a, span, div {
 /* 覆盖全局样式，调整标题的上边距 */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0.5em !important;
-  font-family: 'LXGWWENKAI', sans-serif !重要;
+  font-family: 'LXGWWENKAI', sans-serif !important;
 }
 </style>
 
 <script>
-// 实现平滑滚动
 document.addEventListener('DOMContentLoaded', function() {
+  // 实现平滑滚动
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
       e.preventDefault();
