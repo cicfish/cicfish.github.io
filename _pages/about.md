@@ -43,6 +43,12 @@ redirect_from:
 }
 
 /* 自定义目录链接样式 */
+.toc {
+  border-radius: 20px; /* 圆角边框 */
+  border: 1px solid rgba(128, 128, 128, 0.5); /* 半透明灰色边框 */
+}
+
+/* 自定义目录链接样式 */
 .toc a {
   color: black; /* 更改为黑色 */
   font-weight: bold; /* 设置为粗体 */
