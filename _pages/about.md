@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-味精通关指南
+从零开始的味精学习之旅~
 ======
 
 ## 导语
