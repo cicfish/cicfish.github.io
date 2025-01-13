@@ -13,8 +13,11 @@ redirect_from:
   <img src="/images/冰红茶.jpg" alt="破防" style="width: 100%; height: auto;">
 </div>
 
+<button id="toc-toggle" style="position: fixed; right: 20px; top: 20px; z-index: 1000;">目录</button>
+
 <div style="position: relative;">
-  <div class="toc" style="position: fixed; right: 240px; top: 200px; width: 320px; max-height: 600px; overflow-y: auto;">
+  <div id="toc-container" class="toc" style="position: fixed; right: 20px; top: 60px; width: 320px; max-height: 600px; overflow-y: auto; display: none;">
+    <button id="toc-close" style="position: absolute; right: 10px; top: 10px;">X</button>
     <h2>目录</h2>
     <ul>
       <li><a href="#导语">导语</a></li>
@@ -92,10 +95,21 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
+
+  // 目录展开和收起功能
+  const tocToggle = document.getElementById('toc-toggle');
+  const tocContainer = document.getElementById('toc-container');
+  const tocClose = document.getElementById('toc-close');
+
+  tocToggle.addEventListener('click', function() {
+    tocContainer.style.display = 'block';
+  });
+
+  tocClose.addEventListener('click', function() {
+    tocContainer.style.display = 'none';
+  });
 });
 </script>
-
-
 
 从零开始的味精学习之旅~
 ======
