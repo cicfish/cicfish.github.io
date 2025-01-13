@@ -35,13 +35,13 @@ body::after {
   position: fixed;
   top: 0;
   bottom: 0;
-  background-color: rgba(135, 206, 250, 0.4); /* 添加透明度的彩色 */
+  background: linear-gradient(to right, rgba(135, 206, 250, 0.4), rgba(135, 206, 250, 0.4) calc(100% - 10px), rgba(255, 255, 255, 0.4)); /* 添加透明度的彩色渐变 */
   z-index: -1; /* 确保背景在文字层的下方 */
 }
 
 body::before {
   left: 0;
-    width: 630px; /* 左侧宽度 */
+  width: 630px; /* 左侧宽度 */
 }
 
 body::after {
