@@ -17,8 +17,8 @@ redirect_from:
     <ul>
       <li><a href="#大一">大一</a></li>
       <li><a href="#大二">大二</a></li>
-      <li><a href="#工作经历">工作经历</a></li>
-      <li><a href="#项目">项目</a></li>
+      <li><a href="#大三">大三</a></li>
+      <li><a href="#大四">大四</a></li>
     </ul>
   </div>
 </div>
@@ -91,10 +91,10 @@ document.addEventListener('DOMContentLoaded', function() {
 ## 大二
 这是教育部分。
 
-## 工作经历
+## 大三
 这是工作经历部分。
 
-## 项目
+## 大四
 这是项目部分。
 
 会有人看的， <img src="/images/对吗.jpg" alt="对吗" width="200"/>
