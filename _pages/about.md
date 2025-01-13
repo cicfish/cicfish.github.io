@@ -86,16 +86,16 @@ document.addEventListener('DOMContentLoaded', function() {
 ======
 
 ## 大一
-这是大一部分。
+是时候体验真正的大学牲活了。
 
 ## 大二
-这是教育部分。
+这是大二部分。
 
 ## 大三
-这是工作经历部分。
+这是大三部分。
 
 ## 大四
-这是项目部分。
+你去哪了？
 
 会有人看的， <img src="/images/对吗.jpg" alt="对吗" width="200"/>
 ======
