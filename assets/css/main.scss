@@ -35,17 +35,18 @@ body::after {
   position: fixed;
   top: 0;
   bottom: 0;
-  width: 600px; /* 调整这个值以适应你的页面布局 */
   background-color: rgba(135, 206, 250, 0.4); /* 添加透明度的彩色 */
   z-index: -1; /* 确保背景在文字层的下方 */
 }
 
 body::before {
   left: 0;
+    width: 650px; /* 左侧宽度 */
 }
 
 body::after {
   right: 0;
+  width: 600px; /* 右侧宽度 */
 }
 
 @import "vendor/breakpoint/breakpoint"; // media query mixins
