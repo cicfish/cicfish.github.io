@@ -10,6 +10,35 @@ redirect_from:
 <div style="width: 80%; max-width: 1000px;">
   <img src="/images/冰红茶.jpg" alt="破防" style="width: 100%; height: auto;">
 </div>
+
+<div style="position: relative;">
+  <div class="toc" style="position: fixed; right: 20px; top: 20px; width: 180px;">
+    <h2>目录</h2>
+    <ul>
+      <li><a href="#大一">大一</a></li>
+      <li><a href="#大二">大二</a></li>
+      <li><a href="#工作经历">工作经历</a></li>
+      <li><a href="#项目">项目</a></li>
+    </ul>
+  </div>
+  
+  <div style="width: 80%; max-width: 1000px;">
+    ## 大一
+    这是大一部分。
+
+    ## 大二
+    这是教育部分。
+
+    ## 工作经历
+    这是工作经历部分。
+
+    ## 项目
+    这是项目部分。
+
+    会有人看的， <img src="/images/对吗.jpg" alt="对吗" width="200"/>
+  </div>
+</div>
+
 <style>
 /* 添加偏移量以确保跳转后标题不会被遮挡 */
 :target::before {
@@ -18,12 +47,6 @@ redirect_from:
   height: 80px; /* 调整这个值以适应你的页面布局，确保标题不会被遮挡 */
   margin-top: -80px; /* 与height值相同 */
   visibility: hidden;
-}
-
-/* 自定义目录链接样式 */
-.toc {
-  margin-top: 20px; /* 根据需要调整这个值 */
-  padding-top: 0px; /* 根据需要调整这个值 */
 }
 
 /* 自定义目录链接样式 */
@@ -37,6 +60,7 @@ redirect_from:
 .toc a:hover {
   text-decoration: underline; /* 悬停时显示下划线 */
 }
+
 /* 为各个标题添加适当的 padding-top 防止遮挡 */
 h2, h3, h4 {
   padding-top: 70px; /* 确保标题不会被遮挡，与你的 :target::before 高度相同 */
