@@ -18,7 +18,7 @@ redirect_from:
     <h2>目录</h2>
     <ul>
       <li><a href="#导语">导语</a></li>
-      <li><a href="#“未来精工技术”是什么？">“未来精工技术”是什么？</a></li>
+      <li><a href="#&ldquo;未来精工技术&rdquo;是什么？">“未来精工技术”是什么？</a></li>
       <li><a href="#大一">大一</a>
         <ul>
           <li><a href="#第一学期">第一学期</a></li>
