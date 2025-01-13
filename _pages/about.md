@@ -12,7 +12,7 @@ redirect_from:
 </div>
 
 <div style="position: relative;">
-  <div class="toc" style="position: fixed; right: 20px; top: 20px; width: 180px;">
+  <div class="toc" style="position: fixed; right: 100px; top: 20px; width: 180px;">
     <h2>目录</h2>
     <ul>
       <li><a href="#大一">大一</a></li>
