@@ -35,7 +35,7 @@ body::after {
   position: fixed;
   top: 0;
   bottom: 0;
-  background: linear-gradient(to right, rgba(135, 206, 250, 0.4), rgba(135, 206, 250, 0.4) calc(100% - 10px), rgba(255, 255, 255, 0.4)); /* 添加透明度的彩色渐变 */
+  background: linear-gradient(to right, rgba(135, 206, 250, 0.2), rgba(135, 206, 250, 0.4) calc(100% - 10px), rgba(255, 255, 255, 0.4)); /* 添加透明度的彩色渐变 */
   z-index: -1; /* 确保背景在文字层的下方 */
 }
 
