@@ -13,10 +13,10 @@ redirect_from:
   <img src="/images/冰红茶.jpg" alt="破防" style="width: 100%; height: auto;">
 </div>
 
-<button id="toc-toggle" style="position: fixed; right: 20px; top: 20px; z-index: 1000; background-color: #4CAF50; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">目录</button>
+<button id="toc-toggle" style="position: fixed; right: 20px; top: 20px; z-index: 9999; background-color: #4CAF50; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">目录</button>
 
 <div style="position: relative;">
-  <div id="toc-container" class="toc" style="position: fixed; right: 20px; top: 60px; width: 320px; max-height: 600px; overflow-y: auto; display: none; background: white; border: 1px solid rgba(128, 128, 128, 0.5); border-radius: 20px;">
+  <div id="toc-container" class="toc" style="position: fixed; right: 20px; top: 60px; width: 320px; max-height: 600px; overflow-y: auto; display: none; background: white; border: 1px solid rgba(128, 128, 128, 0.5); border-radius: 20px; z-index: 1000;">
     <button id="toc-close" style="position: absolute; right: 10px; top: 10px; background-color: #f44336; color: white; border: none; padding: 5px; border-radius: 3px; cursor: pointer;">X</button>
     <h2>目录</h2>
     <ul>
