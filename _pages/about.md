@@ -8,6 +8,8 @@ redirect_from:
 ---
 
 <div style="width: 80%; max-width: 1000px;">
+  “经 典 永 流 传”
+  
   <img src="/images/冰红茶.jpg" alt="破防" style="width: 100%; height: auto;">
 </div>
 
