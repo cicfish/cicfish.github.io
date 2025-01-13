@@ -12,7 +12,7 @@ redirect_from:
 </div>
 
 <div style="position: relative;">
-  <div class="toc" style="position: fixed; right: 100px; top: 20px; width: 240px; max-height: 400px; overflow-y: auto;">
+  <div class="toc" style="position: fixed; right: 240px; top: 200px; width: 320px; max-height: 600px; overflow-y: auto;">
     <h2>目录</h2>
     <ul>
       <li><a href="#大一">大一</a></li>
