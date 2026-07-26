@@ -7,11 +7,11 @@ tags:
 ---
 
 检查真的烦
-试着敲代码
-======
 
-You can have many headings
-======
 
-Aren't headings cool?
+
+
+
+检查了半天，英文符号没问题，缩进没问题……配置路径也是对的……
+什么叫做中文空格？
 ------
